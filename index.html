@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrutesh | Portfolio</title>
+    <meta name="description" content="Portfolio of Kotha Hrutesh, a Computer Science Engineering student and Full Stack Developer.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Hru<span>tesh</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section-hidden">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <div class="badge">Available for Work</div>
+                    <h1 class="glitch" data-text="Hi, I'm Hrutesh">Hi, I'm Hrutesh</h1>
+                    <h2 class="subtitle">Computer Science Engineering Student <span class="divider">|</span> AI Enthusiast <span class="divider">|</span> Full Stack Developer</h2>
+                    <p class="description">
+                        Passionate about building innovative software solutions, exploring Artificial Intelligence, and creating impactful web applications.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i class="ph ph-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper glass-panel">
+                        <!-- Placeholder for profile image -->
+                        <div class="placeholder-avatar">
+                            <i class="ph ph-user"></i>
+                        </div>
+                        <div class="floating-badge badge-1">
+                            <i class="ph ph-code"></i>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="ph ph-cpu"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-hidden">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info glass-card">
+                        <div class="education-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>B.Tech Computer Science Engineering</h3>
+                                    <h4>KL Deemed to be University</h4>
+                                    <span class="timeline-date">2024 &ndash; 2028</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="traits">
+                            <span class="trait-tag"><i class="ph ph-lightning"></i> Quick Learner</span>
+                            <span class="trait-tag"><i class="ph ph-rocket"></i> Technology Enthusiast</span>
+                            <span class="trait-tag"><i class="ph ph-puzzle-piece"></i> Problem Solver</span>
+                            <span class="trait-tag"><i class="ph ph-users"></i> Team Player</span>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="ph ph-terminal-window"></i></div>
+                            <div class="stat-number" data-target="4">0</div>
+                            <div class="stat-label">Programming Languages</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="ph ph-files"></i></div>
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Projects Built</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="ph ph-stack"></i></div>
+                            <div class="stat-number" data-target="12">0</div>
+                            <div class="stat-label">Technologies Learned</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="ph ph-users-three"></i></div>
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">Leadership Roles</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-hidden">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-container">
+                    <!-- Programming -->
+                    <div class="skill-category glass-card">
+                        <h3 class="category-title"><i class="ph ph-code-block"></i> Programming</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>C</span> <span>90%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Java</span> <span>85%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Python</span> <span>80%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>DSA</span> <span>75%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skill-category glass-card">
+                        <h3 class="category-title"><i class="ph ph-browser"></i> Frontend</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>HTML</span> <span>95%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>CSS</span> <span>90%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>React.js</span> <span>70%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="70%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category glass-card">
+                        <h3 class="category-title"><i class="ph ph-wrench"></i> Tools</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Git</span> <span>85%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>VS Code</span> <span>95%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Eclipse</span> <span>80%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-category glass-card">
+                        <h3 class="category-title"><i class="ph ph-users-three"></i> Soft Skills</h3>
+                        <div class="skill-tags">
+                            <span class="soft-skill-tag">Communication</span>
+                            <span class="soft-skill-tag">Teamwork</span>
+                            <span class="soft-skill-tag">Adaptability</span>
+                            <span class="soft-skill-tag">Quick Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Project Section -->
+        <section id="projects" class="projects section-hidden">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Project</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="project-showcase glass-card">
+                    <div class="project-image-container">
+                        <div class="project-mockup">
+                            <i class="ph ph-desktop"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-primary"><i class="ph ph-link"></i> View Live</a>
+                            <a href="#" class="btn btn-secondary"><i class="ph ph-github-logo"></i> Source</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Web-Based Platform for Managing Student Extracurricular Achievements</h3>
+                        <p class="project-desc">A comprehensive system designed to track, manage, and showcase student achievements beyond academics. It provides an intuitive dashboard for both students and administrators.</p>
+                        
+                        <h4 class="features-title">Key Features</h4>
+                        <ul class="features-list">
+                            <li><i class="ph ph-check-circle"></i> Achievement Tracking</li>
+                            <li><i class="ph ph-check-circle"></i> Participation Records</li>
+                            <li><i class="ph ph-check-circle"></i> Awards Management</li>
+                            <li><i class="ph ph-check-circle"></i> Reporting Dashboard</li>
+                            <li><i class="ph ph-check-circle"></i> Student Achievement Showcase</li>
+                        </ul>
+
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Interests Section -->
+        <section id="experience" class="exp-interests section-hidden">
+            <div class="container">
+                <div class="grid-2">
+                    <!-- Experience -->
+                    <div>
+                        <div class="section-header">
+                            <h2 class="section-title">Experience</h2>
+                            <div class="section-line"></div>
+                        </div>
+                        
+                        <div class="timeline glass-card">
+                            <div class="timeline-item">
+                                <div class="timeline-dot glow"></div>
+                                <div class="timeline-content">
+                                    <h3>Technical Team Member</h3>
+                                    <h4>Radio Club</h4>
+                                    <ul class="timeline-desc">
+                                        <li>Managed live broadcasts and podcasts.</li>
+                                        <li>Organized club activities and tech events.</li>
+                                        <li>Edited and refined audio recordings using Audacity.</li>
+                                        <li>Promoted from Technical Intern due to excellent performance.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interests -->
+                    <div>
+                        <div class="section-header">
+                            <h2 class="section-title">Interests</h2>
+                            <div class="section-line"></div>
+                        </div>
+
+                        <div class="interests-grid">
+                            <div class="interest-card glass-card">
+                                <i class="ph ph-robot"></i>
+                                <span>Artificial Intelligence</span>
+                            </div>
+                            <div class="interest-card glass-card">
+                                <i class="ph ph-brain"></i>
+                                <span>Machine Learning</span>
+                            </div>
+                            <div class="interest-card glass-card">
+                                <i class="ph ph-code"></i>
+                                <span>Programming</span>
+                            </div>
+                            <div class="interest-card glass-card">
+                                <i class="ph ph-trend-up"></i>
+                                <span>Tech Trends</span>
+                            </div>
+                            <div class="interest-card glass-card">
+                                <i class="ph ph-book-open"></i>
+                                <span>Learning Tech</span>
+                            </div>
+                            <div class="interest-card glass-card">
+                                <i class="ph ph-headphones"></i>
+                                <span>Audio Editing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-hidden">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Have a question or want to work together?</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info glass-card">
+                        <h3>Contact Information</h3>
+                        <div class="info-items">
+                            <a href="mailto:hruteshkotha@gmail.com" class="info-item">
+                                <div class="info-icon"><i class="ph ph-envelope-simple"></i></div>
+                                <span>hruteshkotha@gmail.com</span>
+                            </a>
+                            <a href="#" class="info-item">
+                                <div class="info-icon"><i class="ph ph-linkedin-logo"></i></div>
+                                <span>linkedin.com/in/hruteshkotha</span>
+                            </a>
+                            <a href="#" class="info-item">
+                                <div class="info-icon"><i class="ph ph-github-logo"></i></div>
+                                <span>github.com/hruteshkotha</span>
+                            </a>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="ph ph-twitter-logo"></i></a>
+                            <a href="#" class="social-icon"><i class="ph ph-instagram-logo"></i></a>
+                            <a href="#" class="social-icon"><i class="ph ph-discord-logo"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form glass-card" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Your Message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <span>Send Message</span>
+                            <i class="ph ph-paper-plane-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass-panel">
+        <div class="container">
+            <p>Designed and Developed by <span class="highlight">Hrutesh</span></p>
+            <p class="copyright">&copy; 2026 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
